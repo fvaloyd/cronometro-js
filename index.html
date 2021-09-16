@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mirza&display=swap" rel="stylesheet">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="style.css">
+    <title>Cronometro</title>
+</head>
+<body>
+    <!--General container-->
+    <div class="container w-500">
+        <div class="row mx-auto">
+            <div class="col-md-10 mx-auto text-center">
+                <!--app tittle-->
+                <h1>Cronometro</h1>
+                <div class="card col-md-7 mx-auto h-100">
+                    <div class="card-body">
+                        <!--container cronometro screen-->
+                        <div id="screen">
+                            <!--screens second/minute/hour--> 
+                            <span id="hour">00:H</span>
+                            <span id="minute">:00:M</span>
+                            <span id="second">00:S</span>
+                        </div>
+                        <!--container btns-->
+                        <div id="btns">
+                            <!--buttons play/stop/reset-->
+                            <button id="play" class="btn btn-dark" onclick="play()">Play</button>
+                            <button id="stop" class="btn btn-dark" onclick="stop()">Stop</button>
+                            <button id="reset" class="btn btn-dark" onclick="resetear()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--script-->
+    <script src="app.js"></script>
+</body>
+</html>

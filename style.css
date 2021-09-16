@@ -1,0 +1,10 @@
+#stop{
+    display: none;
+}
+#reset{
+    display: none;
+}
+#screen{
+    font-size: 20px;
+    font-family: 'Mirza', cursive;
+}
